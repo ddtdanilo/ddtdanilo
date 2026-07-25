@@ -43,7 +43,7 @@ idea:
 ## What I am building
 
 - Leading technical strategy and IIoT engineering as CTO at
-  [Sento IoT+Electronics Hub](https://sento.com.co).
+  [Sento Tech Labs](https://sento.tech).
 - Creating production-minded tools that connect physical devices to secure,
   observable cloud systems.
 - Maintaining open hardware and Python projects with reproducible releases,
