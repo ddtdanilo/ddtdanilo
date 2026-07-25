@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/ddtdanilo/ddtdanilo/security/advisories/new
+    about: Privately report a vulnerability or sensitive disclosure.
+  - name: Professional contact
+    url: https://www.linkedin.com/in/ddtdanilo
+    about: Contact Danilo about professional work.
