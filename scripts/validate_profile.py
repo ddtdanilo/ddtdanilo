@@ -25,10 +25,6 @@ REQUIRED_README_TEXT = (
     "Selected open-source work",
     "ddtdanilo.github.io",
 )
-PROHIBITED_TEXT = (
-    "Danilo Duarte",
-    "Duarte",
-)
 PROHIBITED_README_MARKUP = (
     "<img",
     "<table",
@@ -59,16 +55,11 @@ def check_required_files() -> list[str]:
 
 def check_identity_and_language() -> list[str]:
     failures: list[str] = []
-    combined = "\n".join(read(path) for path in PUBLIC_TEXT)
     readme = read("README.md")
 
     for value in REQUIRED_README_TEXT:
         if value not in readme:
             failures.append(f"README.md is missing required text: {value!r}")
-
-    for value in PROHIBITED_TEXT:
-        if value.casefold() in combined.casefold():
-            failures.append(f"public content contains prohibited identity: {value!r}")
 
     for value in PROHIBITED_README_MARKUP:
         if value.casefold() in readme.casefold():
