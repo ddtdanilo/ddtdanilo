@@ -6,8 +6,8 @@ This repository is Danilo Díaz Tarascó's public GitHub profile. Its primary
 artifact is `README.md`, which GitHub renders at
 [`github.com/ddtdanilo`](https://github.com/ddtdanilo).
 
-Keep every contribution accurate, respectful, accessible, and aligned with the
-visual language of the public portfolio at
+Keep every contribution accurate, respectful, accessible, and consistent with
+the public portfolio at
 [`ddtdanilo.github.io`](https://ddtdanilo.github.io).
 
 ## Non-negotiable rules
@@ -20,20 +20,19 @@ visual language of the public portfolio at
    credentials, or confidential project information.
 4. Link only to public, verifiable work. Do not invent metrics, titles,
    affiliations, awards, dates, or project outcomes.
-5. Keep the profile useful to humans. Avoid vanity counters, contribution
-   streaks, noisy animations, autoplaying media, and unreliable dynamic cards.
+5. Keep the profile intentionally simple. Avoid banners, badge walls, vanity
+   counters, contribution streaks, animations, autoplaying media, complex
+   tables, and unreliable dynamic cards.
 6. Preserve accessibility: meaningful alternative text, readable contrast,
    semantic headings, descriptive links, and no information conveyed by color
    alone.
-7. Preserve the core visual system: near-black surfaces, cyan `#00D4FF`,
-   violet `#7B61FF`, clean geometric typography, and restrained circuit motifs.
+7. Prefer plain Markdown, short sections, and restrained prose.
 
 ## Repository map
 
 | Path | Responsibility |
 | --- | --- |
 | `README.md` | Public GitHub profile content |
-| `assets/header.svg` | Self-contained profile hero artwork |
 | `scripts/validate_profile.py` | Dependency-free repository checks |
 | `.github/workflows/profile.yml` | Continuous validation |
 | `.github/` | Contribution, ownership, and automation policy |
@@ -58,9 +57,9 @@ python3 scripts/validate_profile.py
 git diff --check
 ```
 
-Review rendered Markdown and SVG whenever layout or artwork changes. Confirm
-that links are HTTPS, headings remain in order, the image has useful alternative
-text, and the result is legible in both light and dark GitHub themes.
+Review rendered Markdown whenever its structure changes. Confirm that links are
+HTTPS, headings remain in order, and the result is easy to scan in both light
+and dark GitHub themes.
 
 ## Commit and pull-request conventions
 

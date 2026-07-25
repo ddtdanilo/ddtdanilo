@@ -19,8 +19,8 @@ python3 scripts/validate_profile.py
 git diff --check
 ```
 
-Inspect `README.md` in a GitHub-compatible preview. If `assets/header.svg`
-changes, render it and check its legibility at desktop and mobile widths.
+Inspect `README.md` in a GitHub-compatible preview and confirm that it remains
+compact and easy to scan.
 
 ## Pull requests
 

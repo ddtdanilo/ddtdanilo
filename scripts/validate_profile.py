@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import re
 import sys
-import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -18,17 +17,23 @@ PUBLIC_TEXT = (
     "SECURITY.md",
     "SUPPORT.md",
 )
-REQUIRED_FILES = (*PUBLIC_TEXT, "LICENSE", "assets/header.svg")
+REQUIRED_FILES = (*PUBLIC_TEXT, "LICENSE")
 REQUIRED_README_TEXT = (
     "Danilo Díaz Tarascó",
     "CTO",
     "Electronic",
-    "Selected work",
+    "Selected open-source work",
     "ddtdanilo.github.io",
 )
 PROHIBITED_TEXT = (
     "Danilo Duarte",
     "Duarte",
+)
+PROHIBITED_README_MARKUP = (
+    "<img",
+    "<table",
+    "img.shields.io",
+    "github-readme-stats",
 )
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*]\(([^)\s]+)(?:\\s+[\"'][^\"']*[\"'])?\)")
 HTML_LINK = re.compile(r"""(?:href|src)=["']([^"']+)["']""")
@@ -65,6 +70,10 @@ def check_identity_and_language() -> list[str]:
         if value.casefold() in combined.casefold():
             failures.append(f"public content contains prohibited identity: {value!r}")
 
+    for value in PROHIBITED_README_MARKUP:
+        if value.casefold() in readme.casefold():
+            failures.append(f"README.md contains prohibited decorative markup: {value!r}")
+
     return failures
 
 
@@ -91,25 +100,6 @@ def check_links() -> list[str]:
     return failures
 
 
-def check_svg() -> list[str]:
-    failures: list[str] = []
-    svg_path = ROOT / "assets/header.svg"
-    try:
-        document = ET.parse(svg_path)
-    except ET.ParseError as error:
-        return [f"assets/header.svg is not valid XML: {error}"]
-
-    root = document.getroot()
-    if not root.tag.endswith("svg"):
-        failures.append("assets/header.svg does not have an SVG root element")
-
-    svg_text = svg_path.read_text(encoding="utf-8")
-    for element in ("<title", "<desc"):
-        if element not in svg_text:
-            failures.append(f"assets/header.svg is missing accessibility element {element}")
-    return failures
-
-
 def check_workflow_pinning() -> list[str]:
     failures: list[str] = []
     workflow_dir = ROOT / ".github/workflows"
@@ -128,7 +118,6 @@ def main() -> int:
         check_required_files,
         check_identity_and_language,
         check_links,
-        check_svg,
         check_workflow_pinning,
     )
     failures = [failure for check in checks for failure in check()]

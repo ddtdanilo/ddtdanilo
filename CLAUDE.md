@@ -18,8 +18,9 @@ grounded in evidence.
   information.
 - Do not introduce generated statistics, fake testimonials, skill ratings, or
   third-party tracking pixels.
-- Do not replace the self-contained SVG hero with an opaque generated asset
-  unless the maintainer explicitly requests it.
+- Keep the presentation plain and compact. Do not add hero artwork, badge walls,
+  dynamic cards, decorative diagrams, or animation unless the maintainer
+  explicitly requests them.
 - Do not add dependencies merely to validate Markdown or SVG.
 
 Run `python3 scripts/validate_profile.py` and `git diff --check` before proposing
