@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title description">
+  <title id="title">Danilo Díaz Tarascó</title>
+  <desc id="description">CTO, electronic engineer, and open-source builder working across Cloud IoT, IIoT, hardware, software, and engineering.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07070b"/>
+      <stop offset="0.52" stop-color="#10101a"/>
+      <stop offset="1" stop-color="#080811"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="0.5" stop-color="#46a6ff"/>
+      <stop offset="1" stop-color="#7b61ff"/>
+    </linearGradient>
+    <radialGradient id="cyan-glow" cx="0" cy="0" r="1" gradientTransform="translate(210 90) rotate(35) scale(460 300)">
+      <stop offset="0" stop-color="#00d4ff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violet-glow" cx="0" cy="0" r="1" gradientTransform="translate(1050 350) rotate(-145) scale(510 330)">
+      <stop offset="0" stop-color="#7b61ff" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#7b61ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+    <filter id="soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <clipPath id="frame">
+      <rect width="1200" height="420" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="420" fill="url(#background)"/>
+    <rect width="1200" height="420" fill="url(#cyan-glow)"/>
+    <rect width="1200" height="420" fill="url(#violet-glow)"/>
+    <rect width="1200" height="420" fill="url(#grid)"/>
+
+    <g fill="none" stroke-linecap="round">
+      <path d="M-35 330H92l42-42h92l35 35h112" stroke="#00d4ff" stroke-opacity=".18" stroke-width="2"/>
+      <path d="M842 72h105l30 30h258" stroke="#7b61ff" stroke-opacity=".22" stroke-width="2"/>
+      <path d="M915 366h95l28-28h198" stroke="#00d4ff" stroke-opacity=".15" stroke-width="2"/>
+      <circle cx="134" cy="288" r="5" fill="#00d4ff" stroke="none"/>
+      <circle cx="977" cy="102" r="5" fill="#7b61ff" stroke="none"/>
+      <circle cx="1038" cy="338" r="4" fill="#00d4ff" stroke="none"/>
+    </g>
+
+    <g transform="translate(70 62)">
+      <rect width="116" height="44" rx="22" fill="#ffffff" fill-opacity=".045" stroke="#ffffff" stroke-opacity=".12"/>
+      <circle cx="23" cy="22" r="5" fill="#00d4ff"/>
+      <text x="40" y="28" fill="#d8d8e5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="1.4">ONLINE</text>
+    </g>
+
+    <text x="72" y="188" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="62" font-weight="750" letter-spacing="-2">Danilo Díaz Tarascó</text>
+    <rect x="72" y="213" width="292" height="4" rx="2" fill="url(#signal)"/>
+    <text x="72" y="263" fill="#c7c7d4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing=".2">CTO · ELECTRONIC ENGINEER · OPEN-SOURCE BUILDER</text>
+    <text x="72" y="313" fill="#8c8c9d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" letter-spacing="2.2">CLOUD IOT / IIOT / HARDWARE / SOFTWARE / ENGINEERING</text>
+
+    <g transform="translate(1000 150)">
+      <circle cx="74" cy="74" r="69" fill="none" stroke="#ffffff" stroke-opacity=".07"/>
+      <circle cx="74" cy="74" r="54" fill="none" stroke="url(#signal)" stroke-opacity=".42" stroke-width="2" stroke-dasharray="5 8"/>
+      <circle cx="74" cy="74" r="42" fill="#0a0a0f" stroke="#ffffff" stroke-opacity=".1"/>
+      <circle cx="74" cy="74" r="46" fill="none" stroke="#00d4ff" stroke-opacity=".25" filter="url(#soft-glow)"/>
+      <text x="74" y="85" text-anchor="middle" fill="url(#signal)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="-1">DDT.</text>
+    </g>
+
+    <text x="72" y="377" fill="#747485" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="1.5">BUILDING THE FUTURE, ONE CIRCUIT AT A TIME.</text>
+    <path d="M0 418H1200" stroke="url(#signal)" stroke-width="4"/>
+  </g>
+</svg>

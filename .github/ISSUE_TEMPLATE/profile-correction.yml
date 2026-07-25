@@ -1,0 +1,36 @@
+name: Profile correction
+description: Report inaccurate public information, a broken link, or an accessibility issue.
+title: "docs: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping keep this profile accurate. Do not include private or confidential information.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Factual correction
+        - Broken link
+        - Accessibility
+        - Presentation
+        - Other documentation
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior
+      description: What is incorrect or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Proposed correction
+      description: Include a public primary source for factual corrections.
+    validations:
+      required: true
