@@ -31,8 +31,6 @@ leadership.
   Python library and CLI for the UNI-T UT383BT lux meter.
 - [Telemetry System](https://github.com/X-Sub/Telemetry-System) — an underwater
   ROV telemetry engineering archive and modern protocol toolkit.
-- [Fuzzy Naked Mega](https://github.com/ddtdanilo/Fuzzy-Naked-Mega) — an open,
-  Arduino-compatible ATmega2560 board.
 - [vcpkg contribution](https://github.com/microsoft/vcpkg/pull/50323) — the
   `ddtdanilo-lmdb-wrapper` port merged into Microsoft's C/C++ package manager.
 
