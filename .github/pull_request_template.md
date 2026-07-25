@@ -6,6 +6,6 @@
 
 - [ ] `python3 scripts/validate_profile.py`
 - [ ] `git diff --check`
-- [ ] Markdown and changed artwork were reviewed visually
+- [ ] Markdown was reviewed in a GitHub-compatible preview
 - [ ] Claims and links were verified at their primary public source
 - [ ] No private or confidential information was added

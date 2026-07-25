@@ -5,3 +5,5 @@
 *.jpg binary
 *.jpeg binary
 *.gif binary
+
+scripts/validate_profile.py linguist-detectable=false
