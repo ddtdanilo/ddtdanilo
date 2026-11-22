@@ -1,13 +1,13 @@
 # Danilo Díaz Tarascó
 
-**CTO at [Sento Tech Labs](https://sento.tech) · Electronic engineer · Medellín,
-Colombia**
+**Forward-deployed engineer, hardware to cloud · CTO at
+[Sento Tech Labs](https://sento.tech) · Electronic engineer · Medellín, Colombia**
 
-I lead a 12-engineer team and build industrial IoT products end to end:
-IPC-compliant PCBs, embedded firmware, FCC-certified hardware, and serverless
-AWS platforms. Alongside my CTO role, I take focused 1:1 technical consulting
-sessions on IIoT hardware, firmware, and cloud architecture — see
-[Consulting](https://ddtdanilo.github.io/consult.html).
+I work where the product runs: on the bench, at the site, and in the cloud
+account. I take connected hardware from a first prototype to a fleet that
+provisions automatically, updates over the air, and reports faults. I lead a
+12-engineer team and take focused 1:1 consulting sessions and scoped
+engagements — see [Consulting](https://ddtdanilo.github.io/consult.html).
 
 [Website](https://ddtdanilo.github.io) ·
 [Consulting](https://ddtdanilo.github.io/consult.html) ·
@@ -16,11 +16,13 @@ sessions on IIoT hardware, firmware, and cloud architecture — see
 
 ## Focus
 
-- Industrial IoT (IIoT) and connected-device architecture
-- Embedded firmware in C/C++, MicroPython, and Python (ESP32, ARM Cortex, LoRa)
-- Altium PCB design, power electronics, FCC readiness, and DFM
-- Serverless AWS infrastructure (Lambda, API Gateway, DynamoDB, S3, CloudFormation/SAM)
-- Technical leadership and AI-assisted engineering workflows
+- Hardware: Altium PCB design, power electronics, RF, FCC readiness, and DFM
+- Firmware: C/C++, MicroPython, and Python on ESP32, ARM Cortex, and Linux gateways
+- Connectivity and fleet operations: LoRa, BLE, LTE, MQTT, zero-touch provisioning, staged OTA with rollback
+- Cloud and data: serverless AWS (Lambda, API Gateway, DynamoDB, S3, CloudFormation/SAM) as code
+- Edge AI: computer vision and inference next to the sensor
+- AI agents for operations: permissioned, audited tool servers over business systems and device data
+  ([case note](https://ddtdanilo.github.io/work/plant-operations-agents.html))
 
 ## Selected open-source work
 
