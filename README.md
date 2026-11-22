@@ -1,7 +1,7 @@
 # Danilo Díaz Tarascó
 
 **Forward-deployed engineer, hardware to cloud · CTO at
-[Sento Tech Labs](https://sento.tech) · Medellín, Colombia**
+[Sento Tech Labs](https://sento.tech) · Electronic engineer · Medellín, Colombia**
 
 I work where the product runs: on the bench, at the site, and in the cloud
 account. I take connected hardware from a first prototype to a fleet that
