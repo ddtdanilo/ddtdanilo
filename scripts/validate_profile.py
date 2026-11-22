@@ -12,7 +12,6 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_TEXT = (
     "README.md",
     "AGENTS.md",
-    "CLAUDE.md",
     "CONTRIBUTING.md",
     "SECURITY.md",
     "SUPPORT.md",

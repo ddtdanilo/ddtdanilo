@@ -27,6 +27,17 @@ the public portfolio at
    semantic headings, descriptive links, and no information conveyed by color
    alone.
 7. Prefer plain Markdown, short sections, and restrained prose.
+8. Preserve Danilo's voice: technically precise, curious, optimistic, and
+   grounded in evidence. This is a public identity surface, not a generic
+   résumé template.
+9. Never infer personal details from commit history, metadata, or external
+   data brokers.
+10. Do not introduce generated statistics, fake testimonials, skill ratings, or
+    third-party tracking pixels.
+11. Do not add dependencies merely to validate Markdown or SVG.
+12. No AI tool is ever an author, co-author, or credited contributor: no
+    `Co-Authored-By` trailers, no "generated with" footers, no tool-specific
+    instruction files. This file is the only agent guidance in the repository.
 
 ## Repository map
 
@@ -38,7 +49,6 @@ the public portfolio at
 | `.github/` | Contribution, ownership, and automation policy |
 | `CONTRIBUTING.md` | Contribution workflow |
 | `SECURITY.md` | Private vulnerability reporting policy |
-| `CLAUDE.md` | Guidance for Claude-based contributors |
 
 ## Working agreement
 
